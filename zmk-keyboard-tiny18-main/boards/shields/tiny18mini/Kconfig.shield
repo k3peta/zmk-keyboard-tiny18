@@ -1,0 +1,5 @@
+config SHIELD_TINY18MINI_R
+    def_bool $(shields_list_contains,tiny18mini_r)
+
+config SHIELD_TINY18MINI_L
+    def_bool $(shields_list_contains,tiny18mini_l)

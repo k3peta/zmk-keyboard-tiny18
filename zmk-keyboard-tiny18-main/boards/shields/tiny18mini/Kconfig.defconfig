@@ -1,0 +1,33 @@
+if SHIELD_TINY18MINI_R
+
+config ZMK_KEYBOARD_NAME
+    default "tiny18mini"
+
+config ZMK_BLE
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_TINY18MINI_R || SHIELD_TINY18MINI_L
+
+
+config ZMK_SPLIT
+    default y
+
+config INPUT
+    default y
+
+config ZMK_POINTING
+    default y
+
+
+config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
+    default 30
+
+config RGBLED_WIDGET_BATTERY_LEVEL_CRITICAL
+    default 10
+
+endif
